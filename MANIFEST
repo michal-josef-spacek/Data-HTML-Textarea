@@ -20,6 +20,7 @@ t/Data-HTML-Textarea/01-use.t
 t/Data-HTML-Textarea/02-version.t
 t/Data-HTML-Textarea/03-new.t
 t/Data-HTML-Textarea/04-autofocus.t
+t/Data-HTML-Textarea/05-cols.t
 Textarea.pm
 xt/Data-HTML-Textarea/01-pod_coverage.t
 xt/Data-HTML-Textarea/02-pod.t
