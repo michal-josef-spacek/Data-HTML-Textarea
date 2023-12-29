@@ -1,6 +1,5 @@
 TODO
 ====
-2. Add doc.
 3. Add tests.
 4.
 
@@ -8,3 +7,6 @@ Applied
 =======
 1. Rename to Form::Textarea?
 NONE [20231229] skim
+
+2. Add doc.
+OK [20231229] skim
