@@ -3,7 +3,7 @@ package Data::HTML::Textarea;
 use strict;
 use warnings;
 
-use Mo qw(build default is);
+use Mo qw(build is);
 use Mo::utils qw(check_bool check_number);
 
 our $VERSION = 0.01;
