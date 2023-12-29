@@ -84,6 +84,12 @@ sub BUILD {
 	}
 	check_bool($self, 'readonly');
 
+	# Check required.
+	if (! defined $self->{'required'}) {
+		$self->{'required'} = 0;
+	}
+	check_bool($self, 'required');
+
 	# Check rows.
 	check_number($self, 'rows');
 
