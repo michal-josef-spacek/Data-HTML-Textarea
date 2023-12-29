@@ -9,35 +9,35 @@ use Mo::utils qw(check_bool check_number);
 our $VERSION = 0.01;
 
 has autofocus => (
-	ro => 1,
+	is => 'ro',
 );
 
 has cols => (
-	ro => 1,
+	is => 'ro',
 );
 
 has css_class => (
-	ro => 1,
+	is => 'ro',
 );
 
 has disabled => (
-	ro => 1,
+	is => 'ro',
 );
 
 has form => (
-	ro => 1,
+	is => 'ro',
 );
 
 has id => (
-	ro => 1,
+	is => 'ro',
 );
 
 has label => (
-	ro => 1,
+	is => 'ro',
 );
 
 has name => (
-	ro => 1,
+	is => 'ro',
 );
 
 has placeholder => (
@@ -45,19 +45,19 @@ has placeholder => (
 );
 
 has readonly => (
-	ro => 1,
+	is => 'ro',
 );
 
 has required => (
-	ro => 1,
+	is => 'ro',
 );
 
 has rows => (
-	ro => 1,
+	is => 'ro',
 );
 
 has value => (
-	ro => 1,
+	is => 'ro',
 );
 
 sub BUILD {
