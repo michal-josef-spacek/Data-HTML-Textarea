@@ -4,7 +4,7 @@ use warnings;
 use Data::HTML::Textarea;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Test.
@@ -37,4 +37,24 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'autofocus' must be a bool (0/1).\n",
 	"Parameter 'autofocus' must be a bool (0/1).");
+clean();
+
+# Test.
+eval {
+	Data::HTML::Textarea->new(
+		'disabled' => 'bad',
+	);
+};
+is($EVAL_ERROR, "Parameter 'disabled' must be a bool (0/1).\n",
+	"Parameter 'disabled' must be a bool (0/1).");
+clean();
+
+# Test.
+eval {
+	Data::HTML::Textarea->new(
+		'readonly' => 'bad',
+	);
+};
+is($EVAL_ERROR, "Parameter 'readonly' must be a bool (0/1).\n",
+	"Parameter 'readonly' must be a bool (0/1).");
 clean();
