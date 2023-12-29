@@ -64,15 +64,24 @@ sub BUILD {
 	my $self = shift;
 
 	# Check autofocus.
+	if (! defined $self->{'autofocus'}) {
+		$self->{'autofocus'} = 0;
+	}
 	check_bool($self, 'autofocus');
 
 	# Check cols.
 	check_number($self, 'cols');
 
 	# Check disabled.
+	if (! defined $self->{'disabled'}) {
+		$self->{'disabled'} = 0;
+	}
 	check_bool($self, 'disabled');
 
 	# Check readonly.
+	if (! defined $self->{'readonly'}) {
+		$self->{'readonly'} = 0;
+	}
 	check_bool($self, 'readonly');
 
 	# Check rows.
